@@ -6,3 +6,5 @@ RUN npm run build --prod
 
 FROM nginx:alpine
 COPY --from=node /app/dist/angular-app /usr/share/nginx/html
+
+EXPOSE 8000 2222 80
